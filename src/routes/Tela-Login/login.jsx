@@ -60,7 +60,7 @@ function TelaAcesso() {
         </div>
         <div className="links-login">
           <a href="/registrar">Criar Conta</a>
-          <a href="/reset">Esqueceu a Senha?</a>
+          <a href="/recuperar">Esqueceu a Senha?</a>
         </div>
       </div>
       <div className="area-imagem-login">

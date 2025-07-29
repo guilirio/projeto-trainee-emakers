@@ -1,0 +1,100 @@
+.wrapper-reset {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.area-reset {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.titulo-reset {
+  font-weight: 300;
+  font-size: 64px;
+  color: #4B626C;
+  margin-bottom: 40px;
+}
+
+.grupo-campos-reset {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario-reset {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.grupo-campos-reset input {
+  background: #F7F7F9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  color: #4B626C;
+  outline: none;
+}
+
+.grupo-botao-reset {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botao-confirmar-reset {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #4B626C;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.botao-confirmar-reset:hover {
+  transform: scale(1.1);
+}
+
+.links-reset {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.links-reset a {
+  color: #A0A0A0;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.links-reset a:hover {
+  text-decoration: underline;
+}
+
+.area-imagem-reset {
+  flex: 0.5; 
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-reset {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
