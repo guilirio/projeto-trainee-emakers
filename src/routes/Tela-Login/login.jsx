@@ -59,12 +59,12 @@ function TelaAcesso() {
           </form>
         </div>
         <div className="links-login">
-          <a href="/register">Criar Conta</a>
-          <a href="/forgot">Esqueceu a Senha?</a>
+          <a href="/registrar">Criar Conta</a>
+          <a href="/reset">Esqueceu a Senha?</a>
         </div>
       </div>
       <div className="area-imagem-login">
-        <img src="/src/assets/images/login-image.png" className="img-login" alt="Visual de acesso" />
+        <img src="/src/assets/images/login-image.png" className="img-login" alt="Imagem Login" />
       </div>
     </div>
   );
