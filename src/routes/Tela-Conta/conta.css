@@ -1,0 +1,260 @@
+.perfil-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dados-usuario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.titulo-usuario {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 80px;
+  color: #4B626C;
+}
+
+.info-usuario {
+  font-size: 24px;
+  color: #4B626C;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 80px;
+  margin-bottom: 10px;
+}
+
+.acoes-usuario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.botao-acao {
+  padding: 15px 25px;
+  background: #4B626C;
+  border-radius: 10px;
+  color: #FBF6F0;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  gap: 10px;
+}
+
+.link-admin {
+  padding: 15px 25px;
+  background: #4B626C;
+  border-radius: 10px;
+  color: #FBF6F0;
+  font-size: 20px;
+  opacity: 0.5;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+}
+
+.jogos-adquiridos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: #2D3E44;
+  border-radius: 10px;
+  padding: 60px;
+  margin-left: 200px;
+  min-width: 450px;
+  max-width: 800px;
+}
+
+.titulo-jogos {
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: white;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.lista-jogos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+  justify-items: center;
+}
+
+.card-jogo {
+  background: none;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jogo-imagem {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.nome-jogo {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: white;
+  width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .perfil-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .jogos-adquiridos {
+    margin-left: 0;
+    margin-top: 30px;
+    min-width: 80%;
+  }
+  
+  .dados-usuario {
+    min-width: 80%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-usuario {
+    font-size: 32px;
+  }
+  
+  .info-usuario {
+    font-size: 20px;
+  }
+  
+  .botao-acao,
+  .link-admin {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+  
+  .titulo-jogos {
+    font-size: 28px;
+  }
+  
+  .nota-jogo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lista-jogos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .jogo-imagem {
+    width: 190px !important;
+    height: 250px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-usuario {
+    font-size: 28px;
+  }
+  
+  .info-usuario {
+    font-size: 18px;
+  }
+  
+  .botao-acao,
+  .link-admin {
+    font-size: 16px;
+  }
+  
+  .titulo-jogos {
+    font-size: 24px;
+  }
+  
+  .nota-jogo {
+    font-size: 16px;
+  }
+  
+  .jogos-adquiridos,
+  .dados-usuario {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .dados-usuario {
+    padding-left: 100px;
+  }
+  
+  .titulo-usuario {
+    font-size: 48px;
+  }
+  
+  .info-usuario {
+    font-size: 28px;
+  }
+  
+  .botao-acao,
+  .link-admin {
+    font-size: 24px;
+    padding: 20px 30px;
+  }
+  
+  .jogos-adquiridos {
+    padding: 40px;
+  }
+  
+  .titulo-jogos {
+    font-size: 36px;
+  }
+  
+  .nota-jogo {
+    font-size: 24px;
+  }
+}

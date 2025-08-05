@@ -29,7 +29,7 @@ function TelaAcesso() {
 
     setAviso('');
     // Aqui você pode adicionar lógica de autenticação
-    navegar('/account');
+    navegar('/conta');
   }
 
   return (
