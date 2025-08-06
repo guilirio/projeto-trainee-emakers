@@ -4,6 +4,7 @@ import TelaAcesso from './routes/Tela-Login/login';
 import TelaRegistro from './routes/Tela-Registro/registro';
 import TelaReset from './routes/Tela-Reset/reset'; 
 import TelaConta from './routes/Tela-Conta/conta';
+import Popular from './routes/Tela-Populares/popular';
 import './index.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/registrar" element={<TelaRegistro />} />
         <Route path="/recuperar" element={<TelaReset />} />
         <Route path="/conta" element={<TelaConta />} />
+        <Route path="/populares" element={<Popular />} />
       </Routes>
     </BrowserRouter>
   );
