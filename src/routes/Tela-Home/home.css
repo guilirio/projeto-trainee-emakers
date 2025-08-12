@@ -1,65 +1,134 @@
-.page-layout {
-  margin: 0;
+.banners-carousel {
+  padding: 30px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.swiper {
+  padding: 10px 30px 40px;
+}
+
+.banner-item {
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow-x: hidden;
+  justify-content: center;
 }
 
-.banner-section {
-  width: 100%;
-}
-
-.banner-image {
-  width: 100%;
-  height: 200px;
+.game-banner {
+  width: 190px;
+  height: 250px;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.section-container {
-  margin: 30px;
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
-.section-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 36px;
-  color: #4B626C;
-  margin-bottom: 20px;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.game-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: none;
 }
 
-.game-thumb {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.swiper-pagination-bullet {
+  background: #888;
+  opacity: 0.7;
+  width: 12px;
+  height: 12px;
 }
 
-.game-name {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #4B626C;
-  margin-top: 10px;
+.swiper-pagination-bullet-active {
+  background: #ff0000;
+  opacity: 1;
+}
+
+.blog-intro {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
   text-align: center;
 }
 
-.banner-card {
-  width: 100%;
-  aspect-ratio: 3 / 4; /* formato vertical */
-  object-fit: cover;
-  border-radius: 8px;
+.blog-intro h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #4B626C;
+  margin-top: 90px;
 }
 
+.blog-intro p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  margin: 0;
+  color: #4B626C;
+}
 
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 28px;
+@media (max-width: 639px) {
+  .banners-carousel {
+    padding: 20px 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .swiper {
+    padding: 10px 10px 40px;
+    width: 100%;
+  }
+  
+  .banner-item {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .game-banner {
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
+  }
+  
+  /* Esconde navegação em mobile para mais espaço */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }
+
+/* Estilos específicos para tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .banners-carousel {
+    padding: 25px 0;
+  }
+  
+  .swiper {
+    padding: 10px 20px 40px;
+  }
+  
+  .game-banner {
+    width: 100%;
+    max-width: 220px;
+    height: 300px;
+  }
+}
+
+/* Mantenha os outros estilos existentes exatamente como estão */
+

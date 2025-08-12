@@ -30,7 +30,7 @@
   
   .imagembotaoN {
     width: 80px;
-    height: 80%;
+    height: auto;
     border: none;
     cursor: pointer;
     margin-left: 10px;
