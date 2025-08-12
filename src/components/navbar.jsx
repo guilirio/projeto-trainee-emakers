@@ -19,7 +19,7 @@ function Navbar() {
 
 
       <div className={`barraclicksN ${isMenuOpen ? "show" : ""}`}>
-        <a href="/Lancamentos">Lançamentos</a>
+        <a href="/lancamentos">Lançamentos</a>
         <a href="/populares">Populares</a>
         <a href="/Generos">Gêneros</a>
         <a href="/Promocoes">Promoções</a>

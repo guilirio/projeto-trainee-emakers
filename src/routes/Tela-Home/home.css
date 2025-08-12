@@ -106,14 +106,14 @@
     height: 350px;
   }
   
-  /* Esconde navegação em mobile para mais espaço */
+
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
   }
 }
 
-/* Estilos específicos para tablet */
+
 @media (min-width: 640px) and (max-width: 1023px) {
   .banners-carousel {
     padding: 25px 0;
@@ -129,6 +129,4 @@
     height: 300px;
   }
 }
-
-/* Mantenha os outros estilos existentes exatamente como estão */
 

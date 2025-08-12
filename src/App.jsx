@@ -18,7 +18,7 @@ function App() {
         <Route path="/recuperar" element={<TelaReset />} />
         <Route path="/conta" element={<TelaConta />} />
         <Route path="/populares" element={<Popular />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/lancamentos" element={<Home />} />
 
       </Routes>
     </BrowserRouter>

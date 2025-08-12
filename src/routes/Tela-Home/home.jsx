@@ -25,8 +25,6 @@ function Home() {
    return (
     <div className="page-layout">
       <Navbar />
-
-      {/* Texto estilo blog - MODIFICADO */}
       <section className="blog-intro">
         <h2>Novidades do Mundo Gamer: Silent Hill ainda vive?</h2>
         <p>
@@ -40,7 +38,6 @@ Role para baixo para ver os principais lançamentos e novidades que estão agita
         </p>
       </section>
 
-      {/* Carrossel de banners - RESPONSIVO */}
       <section className="banners-carousel">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -55,7 +52,7 @@ Role para baixo para ver os principais lançamentos e novidades que estão agita
             slidesPerView: 1,
             spaceBetween: 10,
             slidesPerGroup: 1,
-            centeredSlides: true // Adicionado para melhor visualização em mobile
+            centeredSlides: true 
             },
             // Tablet (640px a 1023px)
             640: {
