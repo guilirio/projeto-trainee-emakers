@@ -98,3 +98,91 @@
   object-fit: cover;
   object-position: top;
 }
+
+@media (max-width: 768px) {
+  .wrapper-login {
+    flex-direction: column; 
+    height: auto;
+  }
+
+  .area-login {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+    align-self: center;
+  }
+
+  .titulo-login {
+    font-size: 36px; 
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .grupo-campos {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .grupo-campos input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .grupo-botao {
+    justify-content: center;
+  }
+
+  .botao-confirmar {
+    font-size: 22px;
+  }
+
+  .links-login {
+    position: static;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .area-imagem-login {
+    flex: none;
+    height: auto; 
+    align-self: center;
+    margin-right: 30%;
+    margin-top: 15%
+  }
+
+  .img-login {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-login {
+    font-size: 28px;
+  }
+
+  .grupo-campos input {
+    font-size: 14px;
+  }
+
+  .botao-confirmar {
+    font-size: 20px;
+  }
+    .img-login {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+  }
+    .area-imagem-login {
+    flex: none;
+    height: auto; 
+    align-self: center;
+    margin-right: 30%;
+    margin-top: 15%
+  }
+
+
+}

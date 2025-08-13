@@ -9,10 +9,9 @@
 }
 
 .dados-usuario {
-  flex: 0.85;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 0 0 0 10%;
   min-width: 300px;
@@ -34,7 +33,6 @@
   font-weight: 500;
   margin: 2% 0 2% 0;
   padding: 0;
-  align-items: center;
 }
 
 .acoes-usuario {
@@ -87,16 +85,16 @@
 }
 
 .jogos-adquiridos {
-  flex: 1;
+  flex: 1.5;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   background: #2D3E44;
-  padding: 85px;
   min-width: 450px;
   max-width: 800px;
-  margin: 0 0 0 10%;
+  margin-left: auto;
+  margin-top: auto;
 }
 
 .titulo-jogos {
@@ -223,9 +221,12 @@
     font-size: 16px;
   }
   
-  .jogos-adquiridos,
+  .jogos-adquiridos {
+    min-width: 100%;
+    border-radius: 0;
+  }
   .dados-usuario {
-    padding: 15px;
+    margin-right: 10%;
   }
 }
 
