@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import './lancamentos.css'
 import Navbar from '../../components/navbar'
 import Footer from '../../components/footer'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -8,7 +8,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-function Home() {
+function Lancamentos() {
   const banners = [
     'src/assets/images/bob-esponja.png',
     'src/assets/images/god-of-war.png',
@@ -89,4 +89,4 @@ Role para baixo para ver os principais lançamentos e novidades que estão agita
   )
 }
 
-export default Home
+export default Lancamentos

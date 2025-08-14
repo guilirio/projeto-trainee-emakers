@@ -179,10 +179,8 @@
     .area-imagem-login {
     flex: none;
     height: auto; 
-    align-self: center;
-    margin-right: 30%;
-    margin-top: 15%
   }
-
-
+  .area-login {
+    padding: 5%;
+  }
 }

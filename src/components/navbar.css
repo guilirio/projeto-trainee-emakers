@@ -10,6 +10,7 @@
     padding: 0px;
     position: fixed;
     overflow-x: hidden;
+    overflow-y: hidden;
     box-sizing: border-box;
     z-index: 10000;
   }
