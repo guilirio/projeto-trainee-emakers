@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-section">
         <h4>Explorar</h4>
         <div className="content">
-          <a href="/">Início</a>
+          <a href="/conta">Início</a>
           <a href="/populares">Populares</a>
           <a href="/conta">Conta</a>
           <p>© 2025 Game Hub | By Emakers Junior</p>
