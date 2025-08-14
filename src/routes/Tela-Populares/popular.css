@@ -110,10 +110,6 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-@media(max-width:1024px){
-    /* Removido .textP não utilizado */
-}
-
 @media (max-width: 768px) {
     .popular-container {
         flex-direction: column;
@@ -156,5 +152,16 @@
         height: 30px;
         font-size: 12px;
         margin-left:2%;
+    }
+    
+    .game-description {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 10px;
+    }
+    .section-title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        align-self: center;
     }
 }

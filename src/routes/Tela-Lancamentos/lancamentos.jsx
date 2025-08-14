@@ -57,9 +57,9 @@ Role para baixo para ver os principais lançamentos e novidades que estão agita
             // Tablet (640px a 1023px)
             640: {
             slidesPerView: 2,
-            spaceBetween: 15,
+            spaceBetween: 20,
             slidesPerGroup: 2,
-            centeredSlides: false
+            centeredSlides: true
             },
             // Desktop (1024px+)
             1024: {

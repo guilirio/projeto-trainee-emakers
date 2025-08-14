@@ -21,12 +21,12 @@ function TelaRegistro() {
     e.preventDefault();
 
     if (!nome || !email || !senha || !confirmarSenha || !cpf) {
-      setAviso('Por favor, preencha todos os campos!');
+      setAviso('Preencha todos os campos!');
       return;
     }
 
     if (!validarEmail(email)) {
-      setAviso('Por favor, insira um e-mail válido!');
+      setAviso('Insira um e-mail válido!');
       return;
     }
 
@@ -36,8 +36,8 @@ function TelaRegistro() {
     }
 
     setAviso('');
-    // Lógica de registro aqui
-    navegar('/account');
+    // Aqui você pode adicionar a lógica para enviar os dados do registro
+    navegar('/login');
   }
 
   return (
