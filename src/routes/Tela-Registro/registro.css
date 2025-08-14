@@ -181,3 +181,94 @@ html, body {
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .wrapper-registro {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .area-registro {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+    align-self: center;
+  }
+
+  .titulo-registro {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .grupo-campos-registro {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .grupo-campos-registro input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .grupo-botao-registro {
+    justify-content: center;
+  }
+
+  .botao-confirmar-registro {
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .links-registro {
+    position: static;
+    margin-top: 20px;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .area-imagem-registro {
+    flex: none;
+    height: auto;
+    align-self: center;
+    margin-right: 30%;
+    margin-top: 15%;
+  }
+
+  .img-registro {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-registro {
+    font-size: 28px;
+  }
+
+  .grupo-campos-registro input {
+    font-size: 14px;
+  }
+
+  .botao-confirmar-registro {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .area-imagem-registro {
+    height: auto;
+    margin-top: 15%;
+    margin-right: 30%;
+  }
+
+  .img-registro {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+  }
+}
