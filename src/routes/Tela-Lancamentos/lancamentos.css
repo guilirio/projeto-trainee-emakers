@@ -1,88 +1,99 @@
+/* ================= Carrossel de Banners ================= */
 .banners-carousel {
-  padding: 30px 0;
-  max-width: 1200px;
-  margin: 0 auto;
+    padding: 30px 0;          /* Espaçamento vertical */
+    max-width: 1200px;        /* Largura máxima centralizada */
+    margin: 0 auto;           /* Centraliza horizontalmente */
 }
 
+/* Item individual do carrossel */
 .banner-item {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;  /* Centraliza banner dentro do item */
 }
 
+/* Imagem do jogo no banner */
 .game-banner {
-  width: 190px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 190px;
+    height: 250px;
+    object-fit: cover;        /* Mantém proporção e preenche o espaço */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);  /* Sombra suave */
 }
 
+/* Introdução do blog */
 .blog-intro {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.blog-intro h2 {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
-  color: #4B626C;
-  margin-top: 90px;
-}
-
-.blog-intro p {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  margin: 0;
-  color: #4B626C;
-}
-
-@media (max-width: 639px) {
-  .banners-carousel {
-    padding: 20px 0;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .banner-item {
-    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;        /* Centraliza com espaçamento superior/inferior */
     padding: 0 20px;
-  }
-  
-  .game-banner {
-    width: 100%;
-    max-width: 300px;
-    height: 450px;
-  }
-  .blog-intro h2 {
-    font-size: 24px;
-    margin-top: 60px;
-  }
-  .blog-intro p {
-    font-size: 18px;
-    padding: 10px;
-  }
+    text-align: center;
 }
 
+/* Título da seção do blog */
+.blog-intro h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #4B626C;
+    margin-top: 90px;
+}
+
+/* Parágrafo do blog */
+.blog-intro p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 0;
+    color: #4B626C;
+}
+
+/* ================= Responsividade ================= */
+
+/* Telas pequenas até 639px */
+@media (max-width: 639px) {
+    .banners-carousel {
+        padding: 20px 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .banner-item {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .game-banner {
+        width: 100%;
+        max-width: 300px;
+        height: 450px;
+    }
+
+    .blog-intro h2 {
+        font-size: 24px;
+        margin-top: 60px;
+    }
+
+    .blog-intro p {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+/* Telas médias entre 640px e 1023px */
 @media (min-width: 640px) and (max-width: 1023px) {
-  .banners-carousel {
-    padding: 15px;
-  }
+    .banners-carousel {
+        padding: 15px;
+    }
 
-  .game-banner {
-    width: 100%;
-    max-width: 220px;
-    height: 300px;  
-  }
+    .game-banner {
+        width: 100%;
+        max-width: 220px;
+        height: 300px;  
+    }
 }
-

@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className='navbarn'>
-        <button className="imagembotaoN" aria-label="Página inicial">
+        <button className="imagembotaoN" aria-label="Página inicial" onClick={() => window.location.href = '/conta'}>
         <img src="/src/assets/images/header.png" className="fotoN" alt="Logo do site" />
         </button>
 
@@ -21,11 +21,10 @@ function Navbar() {
       <div className={`barraclicksN ${isMenuOpen ? "show" : ""}`}>
         <a href="/lancamentos">Lançamentos</a>
         <a href="/populares">Populares</a>
-        <a href="/Generos">Gêneros</a>
-        <a href="/Promocoes">Promoções</a>
+        <a href="/generos">Gêneros</a>
+        <a href="/promocoes">Promoções</a>
         <a href="/conta">Conta</a>
       </div>
-
       <div className={`searchN ${isMenuOpen ? "hidden" : ""}`}>
         <input type="search" placeholder="Pesquisar..." />
         <SearchIcon />

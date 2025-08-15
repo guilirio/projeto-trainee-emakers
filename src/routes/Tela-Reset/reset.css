@@ -100,20 +100,16 @@
 }
 
 @media (max-width: 768px) {
-  .wrapper-reset {
-    flex-direction: column;
+ .wrapper-reset {
+    flex-direction: column; 
     height: auto;
   }
-
-  .area-reset {
-    flex: none;
-    width: 100%;
-    padding: 20px;
-    align-self: center;
+ .area-reset {
+    order: 1; /* Coloca o formulário depois da imagem */
   }
 
   .titulo-reset {
-    font-size: 36px;
+    font-size: 36px; 
     text-align: center;
     margin-bottom: 20px;
   }
@@ -143,18 +139,16 @@
   }
 
   .area-imagem-reset {
-    flex: none;
-    height: auto;
-    align-self: center;
-    margin-right: 30%;
-    margin-top: 15%;
+    order: -1; /* Coloca a imagem primeiro (acima) */
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px; /* Espaço entre a imagem e o formulário */
   }
 
-  .img-reset {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    align-self: center;
+   .img-reset {
+    max-height: 250px; /* Altura máxima para a imagem */
+    object-fit: contain; /* Garante que toda a imagem seja visível */
+    width: 100%;
   }
 }
 
@@ -173,14 +167,17 @@
 
   .area-imagem-reset {
     height: auto;
-    margin-top: 15%;
-    margin-right: 30%;
+    width: 100%;
   }
 
-  .img-reset {
-    width: auto;
+   .img-reset {
+    max-height: 350px;
+    margin-right: 45px;
+  }
+
+  .area-reset {
+    flex: none;
     height: auto;
-    object-fit: cover;
-    align-self: center;
+    padding: 5%;
   }
 }

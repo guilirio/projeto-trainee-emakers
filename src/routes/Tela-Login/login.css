@@ -105,11 +105,8 @@
     height: auto;
   }
 
-  .area-login {
-    flex: none;
-    width: 100%;
-    padding: 20px;
-    align-self: center;
+   .area-login {
+    order: 1; /* Coloca o formulário depois da imagem */
   }
 
   .titulo-login {
@@ -142,19 +139,17 @@
     align-items: center;
   }
 
-  .area-imagem-login {
-    flex: none;
-    height: auto; 
-    align-self: center;
-    margin-right: 30%;
-    margin-top: 15%
+ .area-imagem-login {
+    order: -1; /* Coloca a imagem primeiro (acima) */
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px; /* Espaço entre a imagem e o formulário */
   }
 
-  .img-login {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    align-self: center;
+ .img-login {
+    max-height: 250px; /* Altura máxima para a imagem */
+    object-fit: contain; /* Garante que toda a imagem seja visível */
+    width: 100%;
   }
 }
 
@@ -170,11 +165,10 @@
   .botao-confirmar {
     font-size: 20px;
   }
-    .img-login {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    align-self: center;
+   .img-login {
+    max-height: 350px;
+    width: 100%;
+    margin-right: 45px;
   }
     .area-imagem-login {
     flex: none;
