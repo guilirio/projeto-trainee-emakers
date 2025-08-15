@@ -1,3 +1,4 @@
+/* Estilos globais */
 html, body {
   height: 100%;
   margin: 0;
@@ -6,36 +7,41 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Container principal da página de registro */
 .wrapper-registro {
   display: flex;
-  height: 100vh;
+  height: 100vh; /* Ocupa toda a altura da tela */
 }
 
+/* Área do formulário de registro */
 .area-registro {
-  flex: 0.8;
+  flex: 0.8; /* Ocupa 80% da largura do wrapper */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+/* Título do registro */
 .titulo-registro {
   font-weight: 400;
   font-size: 64px;
   line-height: 1;
-  color: #2E8B57; 
+  color: #2E8B57;
   margin-bottom: 20px;
   text-align: center;
 }
 
+/* Grupo de campos do formulário */
 .grupo-campos-registro {
   width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 25px; /* Espaçamento entre inputs */
   align-items: center;
 }
 
+/* Formulário de registro */
 .formulario-registro {
   width: 100%;
   display: flex;
@@ -43,6 +49,7 @@ html, body {
   gap: 15px;
 }
 
+/* Inputs do formulário */
 .grupo-campos-registro input {
   background: #EFEFEF;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -52,9 +59,10 @@ html, body {
   color: #4B626C;
   padding: 12px 15px;
   width: 100%;
-  outline: none;
+  outline: none; /* Remove contorno padrão */
 }
 
+/* Grupo do botão de confirmação */
 .grupo-botao-registro {
   width: 100%;
   display: flex;
@@ -62,6 +70,7 @@ html, body {
   align-items: center;
 }
 
+/* Botão de confirmação */
 .botao-confirmar-registro {
   width: 50px;
   height: 50px;
@@ -70,13 +79,14 @@ html, body {
   font-size: 32px;
   color: #fff;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* Animação suave no hover */
 }
 
 .botao-confirmar-registro:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
 }
 
+/* Links auxiliares */
 .links-registro {
   width: 100%;
   display: flex;
@@ -99,8 +109,9 @@ html, body {
   text-decoration: underline;
 }
 
+/* Área da imagem lateral */
 .area-imagem-registro {
-  flex: 1;
+  flex: 1; /* Ocupa o espaço restante */
   display: flex;
   height: 100vh;
   align-items: stretch;
@@ -109,6 +120,7 @@ html, body {
   padding: 0;
 }
 
+/* Imagem de registro */
 .img-registro {
   width: 100%;
   height: 100%;
@@ -117,20 +129,25 @@ html, body {
   background-repeat: no-repeat;
 }
 
+/* Mensagem de erro */
 .mensagem-erro-registro {
   color: #2E8B57;
   font-size: 20px;
   margin-top: 5px;
 }
 
-/* Ajuste para telas menores */
+/* ============================= */
+/* Ajustes para telas menores */
+/* ============================= */
+
+/* Tablets e telas médias */
 @media(max-width: 1024px) {
   .wrapper-registro {
     flex-direction: column;
   }
 
   .area-imagem-registro {
-    order: -1;
+    order: -1; /* Move a imagem para cima */
     width: 100%;
     height: 50vh;
   }
@@ -138,8 +155,6 @@ html, body {
   .img-registro {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center center;
   }
 
   .area-registro {
@@ -182,6 +197,7 @@ html, body {
   }
 }
 
+/* Smartphones maiores */
 @media (max-width: 768px) {
   .wrapper-registro {
     flex-direction: column;
@@ -244,6 +260,7 @@ html, body {
   }
 }
 
+/* Smartphones pequenos */
 @media (max-width: 480px) {
   .titulo-registro {
     font-size: 28px;

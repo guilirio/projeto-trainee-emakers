@@ -1,11 +1,15 @@
+/* ============================ */
+/* Estilos globais do reset */
+/* ============================ */
 .wrapper-reset {
   display: flex;
   height: 100vh;
   width: 100vw;
 }
 
+/* Área do formulário de reset */
 .area-reset {
-  flex: 0.5;
+  flex: 0.5; /* Ocupa metade da largura */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -13,6 +17,7 @@
   padding-left: 20px;
 }
 
+/* Título do formulário */
 .titulo-reset {
   font-weight: 300;
   font-size: 64px;
@@ -20,19 +25,22 @@
   margin-bottom: 40px;
 }
 
+/* Grupo de campos do formulário */
 .grupo-campos-reset {
   width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; /* Espaçamento entre inputs */
 }
 
+/* Formulário de reset */
 .formulario-reset {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
+/* Inputs do formulário */
 .grupo-campos-reset input {
   background: #F7F7F9;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
@@ -44,12 +52,14 @@
   outline: none;
 }
 
+/* Grupo do botão de confirmação */
 .grupo-botao-reset {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
+/* Botão de confirmação */
 .botao-confirmar-reset {
   background: transparent;
   border: none;
@@ -63,6 +73,7 @@
   transform: scale(1.1);
 }
 
+/* Links auxiliares */
 .links-reset {
   position: fixed;
   bottom: 20px;
@@ -84,6 +95,7 @@
   text-decoration: underline;
 }
 
+/* Área da imagem lateral */
 .area-imagem-reset {
   flex: 0.5; 
   height: 100vh;
@@ -92,6 +104,7 @@
   justify-content: flex-end;
 }
 
+/* Imagem de reset */
 .img-reset {
   height: 100%;
   width: 100%;
@@ -99,12 +112,16 @@
   object-position: top;
 }
 
+/* ============================ */
+/* Ajustes responsivos para tablets e smartphones médios */
+/* ============================ */
 @media (max-width: 768px) {
- .wrapper-reset {
+  .wrapper-reset {
     flex-direction: column; 
     height: auto;
   }
- .area-reset {
+
+  .area-reset {
     order: 1; /* Coloca o formulário depois da imagem */
   }
 
@@ -145,13 +162,16 @@
     margin-bottom: 20px; /* Espaço entre a imagem e o formulário */
   }
 
-   .img-reset {
+  .img-reset {
     max-height: 250px; /* Altura máxima para a imagem */
     object-fit: contain; /* Garante que toda a imagem seja visível */
     width: 100%;
   }
 }
 
+/* ============================ */
+/* Ajustes responsivos para smartphones pequenos */
+/* ============================ */
 @media (max-width: 480px) {
   .titulo-reset {
     font-size: 28px;
@@ -170,7 +190,7 @@
     width: 100%;
   }
 
-   .img-reset {
+  .img-reset {
     max-height: 350px;
     margin-right: 45px;
   }

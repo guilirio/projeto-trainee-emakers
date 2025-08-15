@@ -4,20 +4,22 @@ import { motion } from 'framer-motion';
 import EastIcon from '@mui/icons-material/East';
 import './reset.css';
 
-// Reutilizando as mesmas variantes de animação
+// ============================
+// Variantes de animação do Framer Motion
+// ============================
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: { 
     opacity: 1,
     transition: { 
-      staggerChildren: 0.2,
-      when: "beforeChildren"
+      staggerChildren: 0.2, // anima os filhos com atraso
+      when: "beforeChildren" // container aparece antes dos filhos
     }
   }
 };
 
 const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { y: 20, opacity: 0 }, // anima entrada de baixo para cima
   visible: { 
     y: 0, 
     opacity: 1,
@@ -25,16 +27,22 @@ const itemVariants = {
   }
 };
 
+// ============================
+// Componente TelaReset
+// ============================
 function TelaReset() {
-    const [email, setEmail] = useState('');
+  // Estados
+  const [email, setEmail] = useState('');
   const [aviso, setAviso] = useState('');
   const navegar = useNavigate();
 
+  // Função para validar e-mail
   function validarEmail(valor) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(valor);
   }
 
+  // Função ao enviar formulário
   function aoEnviar(e) {
     e.preventDefault();
 
@@ -49,9 +57,10 @@ function TelaReset() {
     }
 
     setAviso('');
-    // Aqui você pode adicionar lógica de envio de recuperação
+    // Lógica de envio de recuperação
     alert('Instruções de recuperação enviadas para o e-mail!');
   }
+
   return (
     <motion.div
       className="wrapper-reset"
@@ -60,6 +69,7 @@ function TelaReset() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      {/* Área do formulário */}
       <motion.div 
         className="area-reset"
         variants={containerVariants}
@@ -67,9 +77,12 @@ function TelaReset() {
         animate="visible"
       >
         <div className="grupo-campos-reset">
+          {/* Título */}
           <motion.h1 className="titulo-reset" variants={itemVariants}>
             Recuperar Conta
           </motion.h1>
+
+          {/* Formulário */}
           <motion.form 
             className="formulario-reset" 
             onSubmit={aoEnviar}
@@ -82,6 +95,8 @@ function TelaReset() {
               value={email}
               onChange={e => setEmail(e.target.value)}
             />
+
+            {/* Mensagem de erro */}
             {aviso && (
               <motion.p 
                 className="mensagem-erro"
@@ -91,6 +106,8 @@ function TelaReset() {
                 {aviso}
               </motion.p>
             )}
+
+            {/* Botão de envio */}
             <div className="grupo-botao">
               <motion.button 
                 type="submit" 
@@ -103,6 +120,8 @@ function TelaReset() {
             </div>
           </motion.form>
         </div>
+
+        {/* Links auxiliares */}
         <motion.div 
           className="links-reset"
           variants={itemVariants}
@@ -121,6 +140,8 @@ function TelaReset() {
           </motion.a>
         </motion.div>
       </motion.div>
+
+      {/* Área da imagem lateral */}
       <motion.div 
         className="area-imagem-reset"
         initial={{ x: 100, opacity: 0 }}

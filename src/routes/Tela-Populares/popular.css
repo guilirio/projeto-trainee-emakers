@@ -1,3 +1,4 @@
+/* ================= Container Principal ================= */
 .popular-container {
     flex: 1;
     display: flex;
@@ -5,6 +6,7 @@
     margin: 5%; 
 }
 
+/* Layout da página */
 .page-layout {
     margin: 0;
     display: flex;
@@ -13,6 +15,7 @@
     overflow-x: hidden;
 }
 
+/* Linhas de jogos ímpares */
 .game-row-odd {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@
     margin-bottom: 10%;
 }
 
+/* Linhas de jogos pares (reverso) */
 .game-row-even {
     display: flex;
     flex-direction: row-reverse;
@@ -33,6 +37,7 @@
     margin-bottom: 10%; 
 }
 
+/* Descrição do jogo */
 .game-description {
     font-family: 'Montserrat';
     font-style: normal;
@@ -46,6 +51,7 @@
     color: #4B626C;
 }
 
+/* Título do jogo */
 .game-title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -53,31 +59,32 @@
     font-size: 32px;
     line-height: 39px;
     color: #4B626C;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
+/* Título da seção */
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 50px;
     line-height: 44px;
     color: #4B626C;
-    margin: 20px 0;  
     letter-spacing: 1px;
-    font-weight:900;
+    margin-top: 110px;
     margin-bottom: 5%;
-    margin-top:110px;
+    align-self: center;
 }
 
+/* Imagem do jogo */
 .game-image {
     width: 100%;
     border-radius: 1%;
-    margin-left:20px;
+    margin-left: 20px;
     margin-top: 20px;
 }
 
+/* Conteúdo de texto dentro da coluna */
 .text-content {
     display: flex;
     align-items: center;
@@ -86,6 +93,7 @@
     height: 100%;
 }
 
+/* Wrapper para imagens com posicionamento relativo */
 .image-wrapper {
     position: relative; 
     width: 100%;
@@ -94,10 +102,11 @@
     flex-direction: row;
 }
 
+/* Badge de ranking */
 .rank-badge {
     width: 50px;
     height: 50px;
-    background-color:#4B626C;
+    background-color: #4B626C;
     color: white;
     display: flex;
     justify-content: center;
@@ -110,6 +119,9 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
+/* ================= Responsividade ================= */
+
+/* Telas médias até 768px */
 @media (max-width: 768px) {
     .popular-container {
         flex-direction: column;
@@ -119,7 +131,7 @@
     .section-title {
         font-size: 40px;
         line-height: 36px;
-        margin-top:50px;
+        margin-top: 50px;
     }
 
     .game-row-odd, .game-row-even {
@@ -141,27 +153,26 @@
     }
 }
 
+/* Telas pequenas até 480px */
 @media (max-width: 480px) {
     .section-title {
         font-size: 30px;
         line-height: 32px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        align-self: center;
     }
 
     .rank-badge {
         width: 30px;
         height: 30px;
         font-size: 12px;
-        margin-left:2%;
+        margin-left: 2%;
     }
-    
+
     .game-description {
         font-size: 16px;
         line-height: 20px;
         padding: 0 10px;
-    }
-    .section-title {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        align-self: center;
     }
 }

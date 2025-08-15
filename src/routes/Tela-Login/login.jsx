@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 import EastIcon from '@mui/icons-material/East';
 import './login.css';
 
-// Variantes de animação
+/* ================= Variantes de animação ================= */
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: { 
     opacity: 1,
     transition: { 
-      staggerChildren: 0.2,
+      staggerChildren: 0.2,   // Animação em sequência
       when: "beforeChildren"
     }
   }
@@ -26,31 +26,36 @@ const itemVariants = {
 };
 
 function TelaAcesso() {
+  // Estados do formulário
   const [identificador, setIdentificador] = useState('');
   const [chave, setChave] = useState('');
   const [aviso, setAviso] = useState('');
   const navegar = useNavigate();
 
+  /* Valida se o identificador é um email válido */
   function validarIdentificador(valor) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(valor);
   }
 
+  /* Função chamada ao enviar o formulário */
   function aoEnviar(e) {
     e.preventDefault();
 
+    // Verifica se todos os campos foram preenchidos
     if (!identificador || !chave) {
       setAviso('Por favor, preencha todos os campos!');
       return;
     }
 
+    // Verifica se o e-mail é válido
     if (!validarIdentificador(identificador)) {
       setAviso('Por favor, insira um e-mail válido!');
       return;
     }
 
     setAviso('');
-    navegar('/conta');
+    navegar('/conta'); // Redireciona para a conta
   }
 
   return (
@@ -61,6 +66,7 @@ function TelaAcesso() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      {/* Área do formulário */}
       <motion.div 
         className="area-login"
         variants={containerVariants}
@@ -68,9 +74,12 @@ function TelaAcesso() {
         animate="visible"
       >
         <div className="grupo-campos">
+          {/* Título do formulário */}
           <motion.h1 className="titulo-login" variants={itemVariants}>
             Login
           </motion.h1>
+
+          {/* Formulário de login */}
           <motion.form 
             className="formulario-login" 
             onSubmit={aoEnviar}
@@ -90,6 +99,8 @@ function TelaAcesso() {
               value={chave}
               onChange={e => setChave(e.target.value)}
             />
+
+            {/* Mensagem de erro */}
             {aviso && (
               <motion.p 
                 className="mensagem-erro"
@@ -99,6 +110,8 @@ function TelaAcesso() {
                 {aviso}
               </motion.p>
             )}
+
+            {/* Botão de confirmação */}
             <div className="grupo-botao">
               <motion.button 
                 type="submit" 
@@ -111,31 +124,30 @@ function TelaAcesso() {
             </div>
           </motion.form>
         </div>
-        <motion.div 
-          className="links-login"
-          variants={itemVariants}
-        >
-          <motion.a 
-            href="/registrar"
-            whileHover={{ scale: 1.05 }}
-          >
+
+        {/* Links auxiliares */}
+        <motion.div className="links-login" variants={itemVariants}>
+          <motion.a href="/registrar" whileHover={{ scale: 1.05 }}>
             Criar Conta
           </motion.a>
-          <motion.a 
-            href="/recuperar"
-            whileHover={{ scale: 1.05 }}
-          >
+          <motion.a href="/recuperar" whileHover={{ scale: 1.05 }}>
             Esqueceu a Senha?
           </motion.a>
         </motion.div>
       </motion.div>
+
+      {/* Área da imagem */}
       <motion.div 
         className="area-imagem-login"
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
-        <img src="/src/assets/images/login-image.png" className="img-login" alt="Imagem Login" />
+        <img 
+          src="/src/assets/images/login-image.png" 
+          className="img-login" 
+          alt="Imagem Login" 
+        />
       </motion.div>
     </motion.div>
   );

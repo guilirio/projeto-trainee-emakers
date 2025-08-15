@@ -6,11 +6,15 @@ import Footer from '../../components/footer'
 function Popular() {
   return (
     <div>
+      {/* Layout principal da página */}
       <div className='page-layout'>
         <Navbar />
+
+        {/* Container dos jogos populares */}
         <div className='popular-container'>
           <h1 className='section-title'>Populares</h1>
           
+          {/* Jogo 1 - Linha ímpar */}
           <div className='game-row-odd'>
             <div className='image-wrapper'>
               <div className='rank-badge'>1º</div>
@@ -25,11 +29,12 @@ function Popular() {
               <p className='game-description'>
                 Kratos, outrora o temido Fantasma de Esparta, agora enfrenta seu maior desafio: ser pai. Como protetor e mentor de Atreus, um filho que busca seu reconhecimento, ele precisa dominar a própria fúria que um dia o consumiu enquanto atravessam um mundo brutal repleto de deuses e monstros nórdicos.
 
-            Deixando para trás a vingança contra o Olimpo, Kratos luta para sobreviver em terras selvagens, onde cada passo exige sangue e sabedoria. Ele não apenas ensina Atreus a se defender, mas também tenta impedi-lo de seguir os mesmos caminhos de violência e destruição que marcaram seu passado. O guerreiro que desafiou deuses agora enfrenta uma batalha ainda maior: proteger seu filho... até de si mesmo.
+                Deixando para trás a vingança contra o Olimpo, Kratos luta para sobreviver em terras selvagens, onde cada passo exige sangue e sabedoria. Ele não apenas ensina Atreus a se defender, mas também tenta impedi-lo de seguir os mesmos caminhos de violência e destruição que marcaram seu passado. O guerreiro que desafiou deuses agora enfrenta uma batalha ainda maior: proteger seu filho... até de si mesmo.
               </p>
             </div>
           </div>
 
+          {/* Jogo 2 - Linha par */}
           <div className='game-row-even'>
             <div className='image-wrapper'>
               <div className='rank-badge'>2º</div>
@@ -44,13 +49,14 @@ function Popular() {
               <p className='game-description'>
                 Em um futuro distante, onde titãs de metal dominam a Terra e a natureza engoliu as ruínas da humanidade, as últimas tribos de sobreviventes lutam por um lugar neste mundo selvagem.
 
-            Você é Aloy, uma destemida caçadora exilada de seu povo, armada apenas com seu arco, sua lança e sua astúcia. Determinada a desvendar os segredos de seu passado, ela embarca em uma jornada épica para salvar um mundo à beira do colapso – e descobrir por que ele está condenado.
+                Você é Aloy, uma destemida caçadora exilada de seu povo, armada apenas com seu arco, sua lança e sua astúcia. Determinada a desvendar os segredos de seu passado, ela embarca em uma jornada épica para salvar um mundo à beira do colapso – e descobrir por que ele está condenado.
 
-            Entre florestas exuberantes e desertos implacáveis, enfrente máquinas colossais, enfrente tribos rivais e desvende os mistérios de uma civilização perdida. O destino da humanidade está em suas mãos.
+                Entre florestas exuberantes e desertos implacáveis, enfrente máquinas colossais, enfrente tribos rivais e desvende os mistérios de uma civilização perdida. O destino da humanidade está em suas mãos.
               </p>
             </div>
           </div>
 
+          {/* Jogo 3 - Linha ímpar */}
           <div className='game-row-odd'>
             <div className='image-wrapper'>
               <div className='rank-badge'>3º</div>
@@ -65,16 +71,18 @@ function Popular() {
               <p className='game-description'>
                 Days Gone é um jogo de ação e aventura em mundo aberto ambientado em um cenário pós-apocalíptico, dois anos após uma pandemia global devastadora.
 
-            Você assume o papel de Deacon St. John, um ex-motociclista fora da lei que agora sobrevive como caçador de recompensas em um mundo à beira do colapso. Em meio ao caos, ele busca não apenas recursos, mas também um propósito em uma terra dominada pela morte e pela violência.
+                Você assume o papel de Deacon St. John, um ex-motociclista fora da lei que agora sobrevive como caçador de recompensas em um mundo à beira do colapso. Em meio ao caos, ele busca não apenas recursos, mas também um propósito em uma terra dominada pela morte e pela violência.
 
-            Explore assentamentos abandonados, colete materiais para fabricar equipamentos essenciais e enfrente os perigos de um mundo hostil. Encontre outros sobreviventes — alguns dispostos a cooperar, outros prontos para trair ou atacar. Suas escolhas definirão seu caminho nessa luta brutal pela sobrevivência.
+                Explore assentamentos abandonados, colete materiais para fabricar equipamentos essenciais e enfrente os perigos de um mundo hostil. Encontre outros sobreviventes — alguns dispostos a cooperar, outros prontos para trair ou atacar. Suas escolhas definirão seu caminho nessa luta brutal pela sobrevivência.
 
-            Prepare-se para uma jornada intensa, onde cada decisão pode ser a diferença entre a vida e a morte. O mundo acabou. Como você vai enfrentá-lo?
+                Prepare-se para uma jornada intensa, onde cada decisão pode ser a diferença entre a vida e a morte. O mundo acabou. Como você vai enfrentá-lo?
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Footer */}
       <footer>
         <Footer />
       </footer>

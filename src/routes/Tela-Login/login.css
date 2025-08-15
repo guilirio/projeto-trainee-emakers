@@ -1,180 +1,199 @@
+/* ================= Wrapper Principal ================= */
 .wrapper-login {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
 }
 
+/* Área do formulário de login */
 .area-login {
-  flex: 0.5;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 20px;
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
 }
 
+/* Título da página de login */
 .titulo-login {
-  font-weight: 300;
-  font-size: 64px;
-  color: #4B626C;
-  margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 64px;
+    color: #4B626C;
+    margin-bottom: 40px;
 }
 
+/* Grupo de campos do formulário */
 .grupo-campos {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+/* Formulário de login */
 .formulario-login {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+/* Inputs do formulário */
 .grupo-campos input {
-  background: #F7F7F9;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  border: none;
-  padding: 15px;
-  font-size: 18px;
-  color: #4B626C;
-  outline: none;
+    background: #F7F7F9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    color: #4B626C;
+    outline: none;
 }
 
+/* Grupo do botão de login */
 .grupo-botao {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
+/* Botão confirmar */
 .botao-confirmar {
-  background: transparent;
-  border: none;
-  font-size: 28px;
-  color: #4B626C;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #4B626C;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
+/* Efeito hover no botão */
 .botao-confirmar:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
+/* Links auxiliares do login */
 .links-login {
-  position: fixed;
-  bottom: 20px;
-  left: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: flex-start;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
 }
 
 .links-login a {
-  color: #A0A0A0;
-  font-weight: 400;
-  font-size: 16px;
-  text-decoration: none;
+    color: #A0A0A0;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .links-login a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
+/* Área da imagem do login */
 .area-imagem-login {
-  flex: 0.5; 
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
+    flex: 0.5;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
 }
 
+/* Imagem de login */
 .img-login {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
+/* ================= Responsividade ================= */
+
+/* Telas médias até 768px */
 @media (max-width: 768px) {
-  .wrapper-login {
-    flex-direction: column; 
-    height: auto;
-  }
+    .wrapper-login {
+        flex-direction: column;
+        height: auto;
+    }
 
-   .area-login {
-    order: 1; /* Coloca o formulário depois da imagem */
-  }
+    .area-login {
+        order: 1; /* Coloca o formulário depois da imagem */
+    }
 
-  .titulo-login {
-    font-size: 36px; 
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    .titulo-login {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-  .grupo-campos {
-    width: 100%;
-    gap: 15px;
-  }
+    .grupo-campos {
+        width: 100%;
+        gap: 15px;
+    }
 
-  .grupo-campos input {
-    font-size: 16px;
-    padding: 12px;
-  }
+    .grupo-campos input {
+        font-size: 16px;
+        padding: 12px;
+    }
 
-  .grupo-botao {
-    justify-content: center;
-  }
+    .grupo-botao {
+        justify-content: center;
+    }
 
-  .botao-confirmar {
-    font-size: 22px;
-  }
+    .botao-confirmar {
+        font-size: 22px;
+    }
 
-  .links-login {
-    position: static;
-    margin-top: 20px;
-    align-items: center;
-  }
+    .links-login {
+        position: static;
+        margin-top: 20px;
+        align-items: center;
+    }
 
- .area-imagem-login {
-    order: -1; /* Coloca a imagem primeiro (acima) */
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 20px; /* Espaço entre a imagem e o formulário */
-  }
+    .area-imagem-login {
+        order: -1; /* Coloca a imagem primeiro (acima) */
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 20px; /* Espaço entre a imagem e o formulário */
+    }
 
- .img-login {
-    max-height: 250px; /* Altura máxima para a imagem */
-    object-fit: contain; /* Garante que toda a imagem seja visível */
-    width: 100%;
-  }
+    .img-login {
+        max-height: 250px; /* Altura máxima para a imagem */
+        object-fit: contain; /* Garante que toda a imagem seja visível */
+        width: 100%;
+    }
 }
 
+/* Telas pequenas até 480px */
 @media (max-width: 480px) {
-  .titulo-login {
-    font-size: 28px;
-  }
+    .titulo-login {
+        font-size: 28px;
+    }
 
-  .grupo-campos input {
-    font-size: 14px;
-  }
+    .grupo-campos input {
+        font-size: 14px;
+    }
 
-  .botao-confirmar {
-    font-size: 20px;
-  }
-   .img-login {
-    max-height: 350px;
-    width: 100%;
-    margin-right: 45px;
-  }
+    .botao-confirmar {
+        font-size: 20px;
+    }
+
+    .img-login {
+        max-height: 350px;
+        width: 100%;
+        margin-right: 45px;
+    }
+
     .area-imagem-login {
-    flex: none;
-    height: auto; 
-  }
-  .area-login {
-    padding: 5%;
-  }
+        flex: none;
+        height: auto;
+    }
+
+    .area-login {
+        padding: 5%;
+    }
 }
