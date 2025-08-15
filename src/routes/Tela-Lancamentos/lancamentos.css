@@ -20,6 +20,10 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);  /* Sombra suave */
 }
 
+.page-layout {
+    min-height: 100vh; /* Garante que a página ocupe pelo menos a altura total da tela */
+}
+
 /* Introdução do blog */
 .blog-intro {
     max-width: 1200px;
