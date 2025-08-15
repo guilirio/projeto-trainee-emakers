@@ -1,243 +1,261 @@
+/* ============================ */
+/* Navbar Principal */
+/* ============================ */
+.navbarn {
+  height: 85px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FBF6F0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0px;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  z-index: 10000;
+}
 
-.navbarn{
-    height: 85px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #FBF6F0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 0px;
-    position: fixed;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    box-sizing: border-box;
-    z-index: 10000;
-  }
-  
-  .hamburgerN {
-    display: none;
+/* ============================ */
+/* Ícone Hamburger (menu mobile) */
+/* ============================ */
+.hamburgerN {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburgerN div {
+  width: 25px;
+  height: 3px;
+  background-color: #4B626C;
+  border-radius: 5px;
+}
+
+/* ============================ */
+/* Logo / botão de imagem */
+/* ============================ */
+.imagembotaoN {
+  width: 80px;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.fotoN {
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================ */
+/* Barra de navegação e links */
+/* ============================ */
+.barraclicksN {
+  display: flex;
+  gap: 5%;
+  height: 100%;
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.barraclicksN a {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 19px;
+  color: #4B626C;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.barraclicksN a:hover {
+  color: #000;
+}
+
+.barraclicksN a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.barraclicksN a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* ============================ */
+/* Barra de busca */
+/* ============================ */
+.searchN {
+  display: flex;
+  align-items: center;
+  background: rgba(151, 164, 162, 0.45);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 5px 10px;
+  height: 50%;
+  width: 10%;
+  margin-right: 20px;
+  position: relative;
+}
+
+.searchN input {
+  background: transparent;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+}
+
+/* ============================ */
+/* Carrinho / Box de ícones */
+/* ============================ */
+.boxofcartN {
+  display: flex;
+  margin: 10px;
+  position: absolute;
+}
+
+.carrinhoN {
+  width: 80px;
+  height: 80px;
+  background-color: #4B626C;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.carrinhoN:hover {
+  background-color: #3a5059;
+}
+
+/* ============================ */
+/* Responsividade: Tablets / Mobile Médio */
+/* ============================ */
+@media (max-width: 768px) {
+  .navbarn {
+    height: 8%;
     flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-  }
-  
-  .hamburgerN div {
-    width: 25px;
-    height: 3px;
-    background-color: #4B626C;
-    border-radius: 5px;
-  }
-  
-  .imagembotaoN {
-    width: 80px;
-    height: auto;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-  }
-  .fotoN{
-    width: 100%;
-    height: 100%;
-    
-  }
-  
-  .barraclicksN {
-    display: flex;
-    gap: 5%;
-    height: 100%;
-    width: 80%;
-    overflow: hidden;
     position: relative;
-    justify-content: center;
+    padding: 10px 0;
+    justify-content: space-between;
+    gap: 10px;
     align-items: center;
   }
-  
-  .barraclicksN a {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 19px;
-    color: #4B626C;
-    text-decoration: none;
-    padding-bottom: 5px;
-  }
-  
-  .barraclicksN a:hover {
-    color: #000;
-  }
-  
-  .barraclicksN a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
-  }
-  
-  .barraclicksN a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
-  .searchN {
-    display: flex;
-    align-items: center;
-    background: rgba(151, 164, 162, 0.45);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    padding: 5px 10px;
-    height: 50%;
-    width: 10%;
-    margin-right: 20px;
-    position: relative;
-    input {
-      background: transparent;
-      width: 100%;
-      border: none;
-      font-size: 14px;
-    }
-   
-  }
-  
-  
-  
-  .boxofcartN {
-    display: flex;
-    margin: 10px;
-    position: absolute;
-  }
-  
-  .carrinhoN {
-    width: 80px;
-    height: 80px;
-    background-color: #4B626C;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.3s ease;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  
-  .carrinhoN:hover {
-    background-color: #3a5059;
-  }
-  
-  @media (max-width: 768px) {
-    .navbarn {
-      height: 8%;
-      flex-direction: column;
-      position: relative;
-      padding: 10px 0;
-      justify-content: space-between;
-      gap: 10px;
-      align-items: center;
-    }
-    .searchN {
-      display: none;
-    }
-  
-    .searchN.hidden {
-      width: 80%;
-      height: 5%;
-      margin-right: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .barraclicksN {
-      flex-direction: column;
-      gap: 10px;
-      max-height: 0;
 
-    }
-  
-    .barraclicksN.show {
-      max-height: 300px;
-      align-items: center;
-      font-size: 10px;
-    }
-  
-    .hamburgerN {
-      display: flex;
-    }
-  
-    .imagembotaoN {
-      width: 70px;
-      margin-left: 0;
-    }
-    .carrinhoN{
-      width: 60px;
-      height: 60px;
-    }
+  .searchN {
+    display: none;
   }
-  
-  @media (max-width: 480px) {
-    .navbarn {
-      flex-direction: column;
-      position: relative;
-    }
-  
-    .barraclicksN a {
-      font-size: 20px;
-    }
-  
-    .searchN.hidden {
-      width: 80%;
-      height: 5%;
-      input {
-        font-size: 12px;
-      }
-    }
-  
-    .barraclicksN a {
-      font-size: 20px;
-    }
-    .imagembotaoN {
-      margin-left: 0;
-      width: 70px;
-    }
-    .carrinhoN{
-      width: 50px;
-      height: 50px;
-    }
-    
+
+  .searchN.hidden {
+    width: 80%;
+    height: 5%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  @media (min-width: 1024px) {
-    .barraclicksN a {
-      font-size: 25px;
-    }
-    .imagembotaoN{
-      width: 100px;
-    }
+
+  .barraclicksN {
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0;
   }
-  
-  @media (min-width: 1440px) {
-    .barraclicksN a {
-      font-size: 32px;
-    }
+
+  .barraclicksN.show {
+    max-height: 300px;
+    align-items: center;
+    font-size: 10px;
   }
-  
-  @media (min-width: 1920px) {
-    .barraclicksN a {
-      font-size: 40px;
-    }
+
+  .hamburgerN {
+    display: flex;
   }
-  
+
+  .imagembotaoN {
+    width: 70px;
+    margin-left: 0;
+  }
+
+  .carrinhoN {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ============================ */
+/* Responsividade: Smartphones pequenos */
+/* ============================ */
+@media (max-width: 480px) {
+  .navbarn {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .barraclicksN a {
+    font-size: 20px;
+  }
+
+  .searchN.hidden input {
+    font-size: 12px;
+  }
+
+  .imagembotaoN {
+    margin-left: 0;
+    width: 70px;
+  }
+
+  .carrinhoN {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* ============================ */
+/* Responsividade: Desktops Grandes */
+/* ============================ */
+@media (min-width: 1024px) {
+  .barraclicksN a {
+    font-size: 25px;
+  }
+
+  .imagembotaoN {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .barraclicksN a {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .barraclicksN a {
+    font-size: 40px;
+  }
+}
