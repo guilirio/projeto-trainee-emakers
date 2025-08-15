@@ -15,9 +15,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 0 0 10%;
-    min-width: 300px;
-    max-width: 500px;
 }
 
 /* Nome ou título do usuário */
@@ -31,12 +28,14 @@
 
 /* Informações do usuário (e-mail, etc.) */
 .info-usuario {
+    display: flex;
     font-size: 24px;
     color: #4B626C;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     margin: 2% 0;
     padding: 0;
+    text-align: center;
 }
 
 /* Área com botões de ação do usuário */
@@ -63,7 +62,7 @@
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    width: 100%;
+    width: 70%;
     box-sizing: border-box;
     border: none;
     text-align: center;
@@ -85,7 +84,7 @@
     cursor: not-allowed;           /* Cursor de bloqueio */
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    width: 100%;
+    width: 70%;
     box-sizing: border-box;
     border: none;
     text-align: center;
@@ -124,6 +123,7 @@
     gap: 50px;
     width: 100%;
     justify-items: center;
+    border-radius: 10px;
 }
 
 /* Card de cada jogo */
@@ -169,11 +169,17 @@
     .jogos-adquiridos {
         margin-left: 0;
         margin-top: 30px;
-        min-width: 80%;
+        min-width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     .dados-usuario {
         min-width: 80%;
         max-width: 100%;
+    }
+    .lista-jogos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 }
 
@@ -194,10 +200,14 @@
 @media (max-width: 600px) {
     .lista-jogos {
         grid-template-columns: repeat(1, 1fr);
+        min-width: 100%;
     }
     .jogo-imagem {
         width: 190px !important;
         height: 250px !important;
+    }
+    .jogos-adquiridos {
+        min-width: 100%;
     }
 }
 
@@ -211,16 +221,14 @@
     .nota-jogo { font-size: 16px; }
     .jogos-adquiridos {
         min-width: 100%;
-        border-radius: 0;
-    }
-    .dados-usuario {
-        margin-right: 10%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
 }
 
 /* Ajustes para telas muito grandes (1600px+) */
 @media (min-width: 1600px) {
-    .dados-usuario { padding-left: 100px; }
+    .dados-usuario { justify-self: center; }
     .titulo-usuario { font-size: 48px; }
     .info-usuario { font-size: 28px; }
     .botao-acao,
