@@ -105,7 +105,7 @@ git clone https://github.com/guilirio/projeto-emakers
 
 ### Instalar dependências
 npm install
-
+npm install framer-motion
 
 ## 3️⃣ Executar
 npm run dev
