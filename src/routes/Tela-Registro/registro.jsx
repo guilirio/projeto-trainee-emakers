@@ -163,7 +163,7 @@ function TelaRegistro() {
         transition={{ duration: 0.7, delay: 0.2 }}
       >
         <img 
-          src="/src/assets/images/login-image.png" 
+          src="/src/assets/images/imagem-logo-hero.png" 
           className="img-login" 
           alt="Visual de acesso" 
         />

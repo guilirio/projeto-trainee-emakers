@@ -97,7 +97,7 @@
 
 /* Área da imagem do login */
 .area-imagem-login {
-    flex: 0.5;
+    flex: 1;
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -115,7 +115,7 @@
 /* ================= Responsividade ================= */
 
 /* Telas médias até 768px */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .wrapper-login {
         flex-direction: column;
         height: auto;
@@ -163,7 +163,7 @@
     }
 
     .img-login {
-        max-height: 250px; /* Altura máxima para a imagem */
+        max-height: 300px; /* Altura máxima para a imagem */
         object-fit: contain; /* Garante que toda a imagem seja visível */
         width: 100%;
     }
@@ -184,9 +184,38 @@
     }
 
     .img-login {
+        max-height: auto;
+        width: 100%;
+        align-self: center;
+    }
+
+    .area-imagem-login {
+        flex: none;
+        height: auto;
+    }
+
+    .area-login {
+        padding: 5%;
+    }
+}
+
+@media (max-width: 320px)  {
+    .titulo-login {
+        font-size: 28px;
+    }
+
+    .grupo-campos input {
+        font-size: 14px;
+    }
+
+    .botao-confirmar {
+        font-size: 20px;
+    }
+
+    .img-login {
         max-height: 350px;
         width: 100%;
-        margin-right: 45px;
+        align-self: center;
     }
 
     .area-imagem-login {

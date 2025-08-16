@@ -92,14 +92,14 @@
 
 /* Área que lista os jogos adquiridos */
 .jogos-adquiridos {
-    flex: 1.2;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
     background: #2D3E44;
     justify-content: center;
-    min-height: 100vh;
+    align-items: center;
+    padding-top: 5%;
+    
 }
 
 /* Título da seção de jogos */
@@ -166,6 +166,8 @@
     }
     .jogos-adquiridos {
         min-width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
     .dados-usuario {
         min-width: 80%;
@@ -188,6 +190,10 @@
     }
     .titulo-jogos { font-size: 28px; }
     .nota-jogo { font-size: 18px; }
+    .jogos-adquiridos {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 }
 
 /* Ajustes para telas até 600px */
@@ -230,7 +236,10 @@
         font-size: 24px;
         padding: 20px 30px;
     }
-    .jogos-adquiridos { padding: 40px; }
+    .jogos-adquiridos { 
+        min-width: 50%;
+        height: 100vh;
+    }
     .titulo-jogos { font-size: 36px; }
     .nota-jogo { font-size: 24px; }
 }

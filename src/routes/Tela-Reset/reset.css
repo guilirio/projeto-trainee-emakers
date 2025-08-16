@@ -15,7 +15,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 20px; 
 }
 
 /* Título do formulário */
@@ -98,7 +97,7 @@
 
 /* Área da imagem lateral */
 .area-imagem-reset {
-  flex: 0.5; 
+  flex: 0.8; 
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -133,7 +132,7 @@
   }
 
   .grupo-campos-reset {
-    width: 100%;
+    width: 80%;
     gap: 15px;
   }
 
@@ -164,7 +163,7 @@
   }
 
   .img-reset {
-    max-height: 250px; /* Altura máxima para a imagem */
+    max-height: 400px; /* Altura máxima para a imagem */
     object-fit: contain; /* Garante que toda a imagem seja visível */
     width: 100%;
   }
@@ -176,6 +175,7 @@
 @media (max-width: 480px) {
   .titulo-reset {
     font-size: 28px;
+    text-align: center;
   }
 
   .grupo-campos-reset input {
@@ -193,7 +193,6 @@
 
   .img-reset {
     max-height: 350px;
-    margin-right: 45px;
   }
 
   .area-reset {
