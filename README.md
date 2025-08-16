@@ -104,8 +104,8 @@ O **GameHub** é uma aplicação web moderna e responsiva voltada para gamers qu
 git clone https://github.com/guilirio/projeto-emakers
 
 ### Instalar dependências
-npm install
-npm install framer-motion
+- npm install
+- npm install framer-motion
 
 ## 3️⃣ Executar
 npm run dev
